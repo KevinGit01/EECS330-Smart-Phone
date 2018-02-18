@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Song Select</title>
+        <link rel="stylesheet" type="text/css" href="login.css"/>
+    </head>
+    <body>
+        <div id="screen">
+          <div class="head-bar">
+          </div>
+
+          <div class="title">
+            <h1>My Time</h1>
+          </div>
+
+
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <button class="submit" onclick="location.href = 'home.html?twitter=false&facebook=false&google=false';">Login</button>
+          <button class="submit" onclick="location.href = 'home.html?twitter=false&facebook=false&google=false';">Create</button>
+
+          <a class="without" href="">Login Without Account</a>
+
+        </div>
+
+        <div class="login-container">
+          <h3 class="loginwith"> Login with </h3>
+          <a href="home.html?twitter=true&facebook=false&google=false" id="twitter"><input type="image" src="images/twitter.png" width="48" height="48"/></a>
+          <a href="home.html?twitter=false&facebook=true&google=false" id="facebook"><input type="image" src="images/google.png" width="48" height="48"/></a>
+          <a href="home.html?twitter=false&facebook=false&google=true" id="google"><input type="image" src="images/facebook.png" width="48" height="48"/></a>
+        </div>
+
+    <script src="login.js"></script>
+    </body>
+</html>

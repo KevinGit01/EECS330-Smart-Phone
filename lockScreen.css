@@ -1,0 +1,24 @@
+/*
+	Global classes
+					*/
+body {
+	background-image: url("images/iphoneOL.jpg");
+	background-repeat: no-repeat;
+	font-family: Avenir, sans-serif;
+}
+
+
+#screen {;
+	height: 530px;
+	width: 300px;
+	margin: 105px 23px;
+	background-color: black;
+}
+
+.goBack{
+	
+	width:30%;
+	height:20%;
+	border:1px solid red;
+	
+}

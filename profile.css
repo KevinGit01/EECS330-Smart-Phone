@@ -1,0 +1,137 @@
+/*
+	Global classes
+					*/
+body {
+	background-image: url("images/iphoneOL.jpg");
+	background-repeat: no-repeat;
+	font-family: Avenir, sans-serif;
+}
+
+
+#screen {
+	height: 530px;
+	width: 300px;
+	margin: 105px 23px;
+}
+
+
+
+.head-bar {
+
+	background-color:#e6ccff;
+	color: white;
+	text-align: center;
+	height: 45px;
+	line-height: 1.5;
+
+}
+
+.title{
+	margin:auto;
+	max-width:50%;
+	max-height:100%;
+
+}
+
+#profile {
+	padding-top: 10px;
+	font-size:18px;
+}
+
+.avarta{
+	float: right;
+	position:relative;
+	top: -48px;
+	right:-75px;
+	width: 50%;
+	width:30%;
+  height:100%;
+
+  display:block;
+}
+.head-bar img{
+	max-width:100%;
+  max-height:90%;
+  margin:auto;
+  display:block;
+
+}
+.material-icons.trendingUp{
+	font-size: 30px;
+	color:purple;
+	text-align: center;
+	float: left;
+	position:relative;
+	left:0px;
+	//top: -3px;
+}
+
+.material-icons.community{
+	font-size: 30px;
+	color:blue;
+	text-align: center;
+	float: left;
+	position:relative;
+	left:0px;
+	top: -3px;
+}
+
+.material-icons.profile{
+	font-size: 30px;
+	color:green;
+	text-align: center;
+	float: right;
+	position:relative;
+	left:0px;
+	top: -3px;
+}
+
+
+.instruction_Box {
+	position:relative;
+	top: 60px;
+	margin: auto;
+	width: 50%;
+}
+
+.instruction_Box p{
+	font-size: 16px;
+}
+
+#bottomBar{
+
+	position: relative;
+	left:32px;
+	bottom: 144px;
+	background-color: black;
+
+}
+
+
+
+.navbar{
+  overflow: hidden;
+  width: 19.5%;
+	height:6%;
+}
+
+
+#bottomBar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 23.1px;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+.navbar a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}

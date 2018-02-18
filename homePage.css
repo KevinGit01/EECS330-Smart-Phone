@@ -1,0 +1,154 @@
+/*
+	Global classes
+					*/
+body {
+	background-image: url("images/iphoneOL.jpg");
+	background-repeat: no-repeat;
+	font-family: Avenir, sans-serif;
+}
+
+
+#screen {;
+	height: 530px;
+	width: 300px;
+	margin: 105px 23px;
+}
+
+#topBar{
+	position: relative;
+	top: 0px;
+	left:8px;
+  background-color: pink;
+
+}
+
+.material-icons.setting{
+	font-size: 30px;
+	color:purple;
+	text-align: center;
+	float:left;
+	position:relative;
+	top:-3px;
+
+}
+
+
+.material-icons.share{
+	font-size: 30px;
+	color:purple;
+	text-align: center;
+	float: right;
+	position:relative;
+	left:0px;
+	top: -3px;
+}
+
+.material-icons.trendingUp{
+	font-size: 30px;
+	color:purple;
+	text-align: center;
+	float: left;
+	position:relative;
+	left:0px;
+	//top: -3px;
+}
+
+.material-icons.community{
+	font-size: 30px;
+	color:blue;
+	text-align: center;
+	float: left;
+	position:relative;
+	left:0px;
+	top: -3px;
+}
+
+.material-icons.profile{
+	font-size: 30px;
+	color:green;
+	text-align: center;
+	float: right;
+	position:relative;
+	left:0px;
+	top: -3px;
+}
+
+
+.instruction_Box {
+	position:relative;
+	left:20px;
+	bottom:-10px;
+	width: 300px;
+}
+
+.instruction_Box p{
+	font-size: 16px;
+}
+
+#bottomBar{
+
+	position: relative;
+	bottom: 255px;
+	left:8px;
+	background-color: black;
+
+}
+
+
+
+.navbar{
+  overflow: hidden;
+  width: 300px;
+	height:50px;
+}
+
+#topBar_setting {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+#topBar h1{
+	font-size: 20px;
+	color: red;
+	float:left;
+	position:relative;
+	left:25px;
+
+}
+
+
+
+#topBar_share {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+#bottomBar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 23.1px;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+.navbar a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}

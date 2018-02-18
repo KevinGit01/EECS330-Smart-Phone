@@ -1,0 +1,90 @@
+/*
+	Global classes
+					*/
+body {
+	background-image: url("images/iphoneOL.jpg");
+	background-repeat: no-repeat;
+	font-family: Avenir, sans-serif;
+}
+
+
+#screen {
+	height: 530px;
+	width: 300px;
+	margin: 105px 23px;
+}
+
+.head-bar {
+	background-color: #e6ccff;
+	width: 100%;
+	height: 17px;
+	color: white;
+	text-shadow: 1px 1px #000000;
+}
+
+.title {
+	text-align: center;
+	margin: 30px;
+	margin-top: 60px;
+}
+
+.container{
+	margin: 10px;
+	text-align: center;
+}
+
+/* Set a style for all buttons */
+.submit {
+    background-color: #e6ccff;
+    color: black;
+    padding: 14px 20px;
+		margin: 25px;
+		margin-top: 15px;
+		margin=bottom: 0px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+	font-size:15px;
+	text-align:center;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.without{
+	margin： auto;
+	text-align: center;
+}
+
+a:hover {
+    background-color: #e6ccff;
+}
+
+.loginwith{
+	display: inline-block;
+}
+
+.login-container{
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.login-container a input {
+	cursor: pointer;
+}
+
+.login-container a:hover {
+	background-color: transparent;
+}
