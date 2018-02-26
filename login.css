@@ -1,6 +1,14 @@
 /*
 	Global classes
 					*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+}
+
+
 body {
 	background-image: url("images/iphoneOL.jpg");
 	background-repeat: no-repeat;
@@ -15,7 +23,7 @@ body {
 }
 
 .head-bar {
-	background-color: #e6ccff;
+	background-color:#b146c3;
 	width: 100%;
 	height: 17px;
 	color: white;
@@ -30,12 +38,11 @@ body {
 
 .container{
 	margin: 10px;
-	text-align: center;
 }
 
 /* Set a style for all buttons */
 .submit {
-    background-color: #e6ccff;
+    background-color: #b146c3;
     color: black;
     padding: 14px 20px;
 		margin: 25px;
@@ -44,12 +51,27 @@ body {
     border: none;
     cursor: pointer;
     width: 30%;
-	font-size:15px;
-	text-align:center;
+  	font-size:15px;
+  	text-align:center;
+    border-radius: 3px;
 }
 
 button:hover {
     opacity: 0.8;
+    color: black;
+    height:40px;
+    weight:70px;
+}
+
+button:active {
+  color:white;
+	height:60px;
+	weight:45px;
+	transform: translateY(5px);
+}
+
+.out:hover {
+	opacity: 0.8;
 }
 
 /* Full-width input fields */
@@ -63,7 +85,7 @@ input[type=text], input[type=password] {
 }
 
 .without{
-	margin： auto;
+	margin-left: 55px;
 	text-align: center;
 }
 
@@ -76,7 +98,7 @@ a:hover {
 }
 
 .login-container{
-	margin-top: 20px;
+	margin-top: 30px;
 	display: flex;
 	justify-content: space-evenly;
 }

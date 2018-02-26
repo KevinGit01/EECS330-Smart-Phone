@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<header>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Usage</title>
+<link rel="stylesheet" type="text/css" href="usage.css"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+   rel="stylesheet">
+</header>
+<body>
+  <!-- load the d3.js library -->
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+<div id="screen">
+
+
+  <div class="navbar" ID = "topBar">
+    <a href="#MyTime" ID = "topBar_setting"><i class="material-icons setting">settings</i></a>
+    <h1 style="position:relative;top:0px;font-weight:bold;">MyTime</h1>
+    <a href="#Usage" ID = "topBar_share"><i class="material-icons share">share</i></a>
+  </div>
+
+  <div class = "instruction_Box1" ><p>daily cell phone usage:</p></div>
+
+
+    <div class="dropdown" id="week">
+      <button class="dropbtn" >Today</button>
+    </div>
+
+    <div class = "plot" id = "daily">
+
+    </div>
+
+
+
+  <div class = "instruction_Box2"><p>monthly cell phone usage:</p></div>
+
+
+
+  <div class="dropdown" id="mon">
+    <button class="dropbtn" >last month</button>
+    <div class="dropdown-content">
+      <a href="#" onclick="updateData(0, 2)">Jan</a>
+      <a href="#" onclick="updateData(1, 3)">Feb</a>
+      <a href="#" onclick="updateData(2, 4)">Mar</a>
+      <a href="#" onclick="updateData(3, 5)">Apr</a>
+      <a href="#" onclick="updateData(4, 6)">May</a>
+      <a href="#" onclick="updateData(5, 7)">Jun</a>
+      <a href="#" onclick="updateData(6, 8)">Jul</a>
+
+    </div>
+  </div>
+
+
+      <div class = "plot" id = "month">
+
+      </div>
+
+
+	 <div class="navbar" ID = "bottomBar">
+    <a href="home.html"><i class="material-icons home">home</i></a>
+    <a href="usage.html"><i class="material-icons trendingUp">trending_up</i></a>
+    <a href="#community"><i class="material-icons community">group</i></a>
+    <a href="Profile.html"><i class="material-icons profile">person_pin</i></a>
+  </div>
+
+  <div class = "tag-box">
+    <div class = "tag-home"><p>Home</p></div>
+    <div class = "tag-usage"><p>Usage</p></div>
+    <div class = "tag-community"><p>Community</p></div>
+    <div class = "tag-profile"><p>Profile</p></div>
+  </div>
+
+  </div>
+</body>
+		<script src="mainpage.js"></script>
+    <script type="text/javascript" src="dialog.js"></script>
+    <script type="text/javascript" src="usage.js"></script>
+</html>

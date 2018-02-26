@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<header>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home Page</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+   rel="stylesheet">
+        <script src="jquery.min.js"></script>
+        <script src="jquery.knob.js"></script>
+        <script>
+		$(function() {
+                $(".knob").knob();
+            });
+		</script>
+		<link rel="stylesheet" href="dialog.css">
+
+
+</header>
+
+<html>
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" type="text/css" href="login.css"/>
+        <link rel="stylesheet" type="text/css" href="account.css"/>
+    </head>
+    <body>
+        <div id="screen">
+          <div class="head-bar">
+          </div>
+
+          <div class="title2">
+            <h1>Create Account</h1>
+          </div>
+
+          <div class="container">
+            <label for="uname"><b>Username*</b></label>
+            <input id="username1" type="other" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password*</b></label>
+            <input id="password1" type="other" placeholder="Enter Password" name="psw" required>
+
+            <label for="fname"><b>Firstname</b></label>
+            <input type="other" placeholder="Enter your firstname" name="fname" >
+
+            <label for="lname"><b>Lastname</b></label>
+            <input  type="other" placeholder="Enter your lastname" name="lname" >
+
+            <label for="uname"><b>Username</b></label>
+            <input id="username" type="other" placeholder="Enter Username" name="uname" required>
+
+            <!-- <button class="submit" onclick="location.href = 'home.html?twitter=false&facebook=false&google=false&account=true';">Login</button> -->
+            <button class="submit" id="create">Create</button>
+            <button class="submit" onclick="location.href = 'index.html';">Cancel</button>
+
+
+          </div>
+
+
+
+
+    <script type="text/javascript" src="dialog.js"></script>
+    <script type="text/javascript" src="account.js"></script>
+    </body>
+</html>

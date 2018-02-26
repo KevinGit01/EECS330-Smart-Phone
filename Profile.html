@@ -6,6 +6,18 @@
 <link rel="stylesheet" type="text/css" href="profile.css"/>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
    rel="stylesheet">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+           <script src="jquery.min.js"></script>
+           <script src="jquery.knob.js"></script>
+           <script>
+   		$(function() {
+                   $(".knob").knob();
+               });
+   		</script>
+   		<link rel="stylesheet" href="dialog.css">
+
+
 </head>
 <body>
 
@@ -15,23 +27,62 @@
   <div class="head-bar">
     <div class = "title">
       <h1 id = "profile">My Profile</h1>
-    <div>
+    </div>
     <div class = "avarta">
       <img src="images/master.jpg">
     </div>
   </div>
 
-  <div class = "instruction_Box"><p>No Distractions For</p></div>
+  <div class = "login">
+
+    <input type="button" class="out"  onClick="javascript:$('body').dailog({type:'danger',isInput:false,title:'Confirmation',discription:'Login with twitter account', bottons:['Confirm']},function(ret) {if(ret.index===0){window.location.href='home.html?twitter=true&facebook=false&google=false&account=true'};})"   style="  background-image:url(./images/twitter.png); border-style:none; width:48px; height:48px; no-repeat;"  />
+
+    <input type="button" class="out"  onClick="javascript:$('body').dailog({type:'danger',isInput:false,title:'Confirmation',discription:'Login with google account', bottons:['Confirm']},function(ret) {if(ret.index===0){window.location.href='home.html?twitter=false&facebook=true&google=false&account=true'};})"   style="  background-image:url(./images/google.png); border-style:none; width:48px; height:48px; no-repeat;"  />
+
+    <input type="button" class="out"  onClick="javascript:$('body').dailog({type:'danger',isInput:false,title:'Confirmation',discription:'Login with facebook account', bottons:['Confirm']},function(ret) {if(ret.index===0){window.location.href='home.html?twitter=false&facebook=false&google=true&account=true'};})"   style="  background-image:url(./images/facebook.png); border-style:none; width:48px; height:48px; no-repeat;"  />
+
+  </div>
+
+
+  <hr class = "top-line">
+  <div class = "instruction_Box"><p>Notification block list</p></div>
+    <hr class = "top-line">
+  <form action="/action_page.php" method="get">
+    <input type="checkbox" name="app" value="twitter" checked>google<br>
+    <hr>
+    <input type="checkbox" name="app" value="google" checked>twitter<br>
+    <hr>
+    <input type="checkbox" checked>wechat<br>
+    <hr>
+    <input type="checkbox" checked>QQ<br>
+    <hr>
+    <input type="checkbox" checked>weibo<br>
+    <hr>
+    <input type="checkbox" checked>message<br>
+    <hr>
+    <input type="checkbox" checked>facebook<br>
+    <hr>
+    <input type="checkbox" checked>gmail<br>
+    <hr>
+  </form>
 
   <div class="navbar" ID = "bottomBar">
-    <a href="#MyTime"><i class="material-icons home">home</i></a>
-    <a href="#Usage"><i class="material-icons trendingUp">trending_up</i></a>
-    <a href="#MyTime"><i class="material-icons community">group</i></a>
-    <a href="#Usage"><i class="material-icons profile">person_pin</i></a>
-  </div>
+   <a href="home.html"><i class="material-icons home">home</i></a>
+   <a href="usage.html"><i class="material-icons trendingUp">trending_up</i></a>
+   <a href="#MyTime"><i class="material-icons community">group</i></a>
+   <a href="Profile.html"><i class="material-icons profile">person_pin</i></a>
+ </div>
+
+ <div class = "tag-box">
+   <div class = "tag-home"><p>Home</p></div>
+   <div class = "tag-usage"><p>Usage</p></div>
+   <div class = "tag-community"><p>Community</p></div>
+   <div class = "tag-profile"><p>Profile</p></div>
+ </div>
 
 
 </div>
 
+<script type="text/javascript" src="dialog.js"></script>
 </body>
 </html>

@@ -2,21 +2,21 @@
 	$.fn.dailog = function(options,callBack){
 	    var _this = this;
 	    var defaultDailog = {
-	      width:              280,                    	 
-	      height:             'auto',                    
-	      padding:            '10px 16px',                
-	      title:              'Warning!',                    
-	      discription:        'Comfirm your choice!',          
-	      borderRadius:       '4px',                     
-	      bottons:            ['Confirm','Cancel'],       
-	      maskBg:             'rgba(0,0,0,0.6)',         
-	      dailogBg:           '#fff',                     
-	      type:               'defalut',                 
-	      zIndex:             '10000011',                
-	      hideScroll: 	  	  false, 					 
-	      isBtnHasBgColor: 	  true, 					  
-	      showBoxShadow: 	  false, 					  
-	      animateStyle: 	  'fadeInNoTransform',	   	  
+	      width:              280,
+	      height:             'auto',
+	      padding:            '10px 16px',
+	      title:              'Warning!',
+	      discription:        'Comfirm your choice!',
+	      borderRadius:       '4px',
+	      bottons:            ['Confirm','Cancel'],
+	      maskBg:             'rgba(0,0,0,0.6)',
+	      dailogBg:           '#fff',
+	      type:               'defalut',
+	      zIndex:             '10000011',
+	      hideScroll: 	  	  false,
+	      isBtnHasBgColor: 	  true,
+	      showBoxShadow: 	  false,
+	      animateStyle: 	  'fadeInNoTransform',
 	      isInput: 			  false, 					          //是否显示输入框
 	      inputPlaceholder:   'Tell us your feelings', 			  //文本输入提示框
 	    };
@@ -43,7 +43,7 @@
 
 	    var _colseScroll = function(){
 	    	$('body,html').css({
-	    		overflow:'auto',
+	    		
 	    	});
 	    }
 
@@ -101,7 +101,7 @@
 		    	}).appendTo(_this.dailog_div);
 		    	_this.input_dailog = $("<input type='text' class='dailog_input' placeholder="+opt.inputPlaceholder+">").appendTo(_this.discription_dailog);
 		    }
-		    
+
 		    _this.dailog_divOperation = $("<div class='dailog_divOperation'></div>").appendTo(_this.dailog_div);
 
 		    if(!(opt.bottons.length === 2)){

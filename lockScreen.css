@@ -16,9 +16,46 @@ body {
 }
 
 .goBack{
-	
+
 	width:30%;
 	height:20%;
 	border:1px solid red;
-	
+
+}
+
+
+.myButton{
+	position: relative;
+	background-color: #b146c3;
+	font-weight: bold;
+    border: none;
+    font-size: 13px;
+    padding: 2px;
+    width: 100px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+		border-radius: 3px;
+
+}
+
+
+.myButton:hover{
+  color: black;
+	height:30px;
+	weight:70px;
+
+
+}
+
+.myButton:active{
+	color:white;
+	height:60px;
+	weight:70px;
+	transform: translateY(5px);
+
+
 }

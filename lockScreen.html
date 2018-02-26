@@ -6,16 +6,38 @@
 <link rel="stylesheet" type="text/css" href="lockScreen.css"/>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
    rel="stylesheet">
+<script type="text/javascript">
+        window.onmessage = function(e){
+            if(e.origin !== 'home.html') return;
+            console.log(e.origin+' '+e.data.msg);
+        }
+</script>
 </head>
 <body>
 
 <div id="screen">
+<a class = "goBack" href = "home.html" id="back" >GIVE UP!</a>
+       <p id="hour1" style="color:blue;position:relative;top:110px;left:35px;font-size:45px">
+        </p>
+		<div style="position:relative; top:30px;left:115px;font-size:25px;color:white;">
+            Minutes Left
+        </div>
+		<div >
+          <p style="position:relative; top:125px;left:50px;font-size:30px;font-weight:bold;color:black" id="good">Task finished</p>
+        </div>
 
-
-
-<a class = "goBack" href = "home.html">Go Back(under construction)</a>
+        <div >
+              <p style="position:relative; top:110px;left:35px;font-size:30px;font-weight:bold;color:black" id="good1">congratulations</p>
+            </div>
+		<div style="float:left;position:relative; top:-55px;left:100px">
+		<button class = "myButton" onclick="showTime()" id="lock" >Hide Time</button>
+		</div>
+		<div style="float:left;position:relative; top:-55px;left:100px">
+		<button class = "myButton" onclick="goBack()" id="move" style="display:none" >Back to main page</button>
+		</div>
 
 </div>
 
 </body>
+<script src="lockpage2.js"></script>
 </html>

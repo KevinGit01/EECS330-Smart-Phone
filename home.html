@@ -7,11 +7,11 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
    rel="stylesheet">
         <script src="jquery.min.js"></script>
-        <script src="jquery.knob.js"></script>	
+        <script src="jquery.knob.js"></script>
         <script>
 		$(function() {
                 $(".knob").knob();
-            });	
+            });
 		</script>
 		<link rel="stylesheet" href="global.css">
 		<link rel="stylesheet" href="dialog.css">
@@ -40,7 +40,7 @@
     <a href="#Usage" ID = "topBar_share"><i class="material-icons share">share</i></a>
   </div>
 
-  <div class = "instruction_Box" ><p style="font-size:30px;position:relative;left:35px;top:15px;font-family:French script MT;font-weight:bold;">No Distractions For:</p></div>
+  <div class = "instruction_Box" ><p style="font-size:30px;position:relative;left:35px;top:15px;font-weight:bold;">No Distractions For:</p></div>
 
 
         <div id="hour" style="float:left;width:100%;font-size:50px;font-weight:bold;color:red;position:relative;left:50px;top:50px">
@@ -48,29 +48,37 @@
         </div>
         <div style="float:left;width:100%;font-size:20px;font-weight:bold;color:purple;position:relative;left:80px;top:25px" >
             Hour
-        </div>        
+        </div>
 		<div id="min" style="float:left;width:100%;font-size:50px;font-weight:bold;color:red;position:relative;left:145px;top:-20px;">
             10
-        </div>	
+        </div>
 		<div style="float:left;width:100%;font-size:20px;font-weight:bold;color:purple;position:relative;left:210px;top:-40px;" >
             Min
-        </div>		
+        </div>
     <div style="float:left;width:300px;height:300px;color:#FFF;padding:20px;position:relative;top:-30px;left:50px;">
-        <input class="knob" id="slider" data-width="175" data-skin="tron" data-fgColor="orange" data-thickness=".2" max="300" value="110">  <!-- data-skin="tron" -->
+        <input class="knob" id="slider" data-width="175" data-skin="tron" data-fgColor="purple" data-thickness=".2" max="300" value="110">  <!-- data-skin="tron" -->
     </div>
 	<div class="div-testDialog" style="position:relative;top:30px;left:-195px;">
 	<button class="dw-btn btn-danger has-hover" onClick="javascript:$('body').dailog({type:'danger',isInput:false},function(ret) {if(ret.index===0){window.location.href='lockScreen.html'};})">GO!</button>
 	</div>
-	
+
 	 <div class="navbar" ID = "bottomBar">
-    <a href="#MyTime"><i class="material-icons home">home</i></a>
-    <a href="#Usage"><i class="material-icons trendingUp">trending_up</i></a>
-    <a href="#MyTime"><i class="material-icons community">group</i></a>
-    <a href="#Usage"><i class="material-icons profile">person_pin</i></a>
+    <a href="home.html"><i class="material-icons home">home</i></a>
+    <a href="usage.html"><i class="material-icons trendingUp">trending_up</i></a>
+    <a href="#community"><i class="material-icons community">group</i></a>
+    <a href="Profile.html"><i class="material-icons profile">person_pin</i></a>
   </div>
-  
+
+  <div class = "tag-box">
+    <div class = "tag-home"><p>Home</p></div>
+    <div class = "tag-usage"><p>Usage</p></div>
+    <div class = "tag-community"><p>Community</p></div>
+    <div class = "tag-profile"><p>Profile</p></div>
+  </div>
+
   </div>
 </body>
-		<script src="mainpage.js"></script>	
+		<script src="mainpage.js"></script>
+    <script src="lockpage.js"></script>
         <script type="text/javascript" src="dialog.js"></script>
 </html>

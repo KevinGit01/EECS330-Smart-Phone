@@ -14,10 +14,89 @@ body {
 	margin: 105px 23px;
 }
 
+/*drop down*/
+.dropbtn {
+    background-color:#b146c3;
+    color: white;
+    padding: 1px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+		color:light purple;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: light purple;
+    min-width: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 1px 2px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+  color: #b146c3;
+	height:25px;
+	weight:70px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: light purple;
+}
+
+
+.plot{
+	top:6px;
+	margin: auto;
+	width:80%;
+	height:25%;
+	position:relative;
+}
+
+.line {
+  fill: none;
+  stroke: #e99af6;
+  stroke-width: 2px;
+}
+
+#mon{
+	top:-10px;
+
+}
+#week{
+	position:relative;
+	left: 0px;
+}
+
+#month{
+	position:relative;
+	top:0px;
+	left: 0px;
+}
+/**/
+
+
+
 #topBar{
 	position: relative;
 	top: 0px;
-	left:8px;
+	left:0px;
   background-color: #b146c3;
 
 }
@@ -72,9 +151,22 @@ body {
 }
 
 
+.instruction_Box1{
+	position:relative;
+	left:10px;
+	text-align: center;
+}
+
+.instruction_Box2{
+	position:relative;
+	top:0px;
+	left:10px;
+	text-align: center;
+}
+
+
 .instruction_Box p{
 	font-size: 16px;
-	color:#b146c3;
 }
 
 
@@ -92,9 +184,9 @@ body {
 #bottomBar{
 	height:60px;
 	width:300px;
-	position: relative;
-	bottom: 265px;
-	left:7px;
+	position:relative;
+	bottom: -13px;
+	left:0px;
 	background-color:#b146c3;
 
 }
@@ -115,6 +207,7 @@ body {
 	float:left;
 	position:relative;
 	left:25px;
+	top:0px;
 
 }
 
@@ -162,20 +255,21 @@ body {
 
 .tag-box{
 	position: relative;
-	top: -280px;
+	top: -20px;
 	left:7.5px;
 	width: 300px;
 	height:50px;
 	color:white;
 	font-weight: bold;
 	font-family:cursive;
+
 }
 
 .tag-home{
 position:relative;
 float:left;
 left:10px;
-top:-5px;
+top:-20.1px;
 width:27%;
 height:3%;
 }
@@ -183,7 +277,7 @@ height:3%;
 .tag-usage{
 	position:relative;
 	float:left;
-	top:-4px;
+	top:-20.1px;
 	width:27%;
 	height:3%;
 }
@@ -198,7 +292,7 @@ height:3%;
 .tag-profile{
 	position:relative;
 	left:240px;
-	top:-4px;
+	top:-20px;
 	width:25%;
 	height:3%;
 	display:block;
