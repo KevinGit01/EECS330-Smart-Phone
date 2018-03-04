@@ -8,7 +8,7 @@ function graphDaily(day) {
   d3.csv("weekly.csv", function(error, data) {
     if (error) throw error;
     //filter the data
-    var filteredData = data.slice(day * 23 , (day + 1) * 23);
+    var filteredData = data.slice(day * 23 , (day + 1) * 23 );
     filteredData.columns = ["date", "close"];
     console.log(filteredData);
     filteredData.forEach(function(d) {
