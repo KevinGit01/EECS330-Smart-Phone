@@ -108,7 +108,7 @@ hr {
 	height:60px;
 	width:300px;
 	position:relative;
-	bottom: -16px;
+	bottom: -6px;
 	left:0px;
 	background-color:#b146c3;
 
@@ -183,7 +183,7 @@ hr {
 
 .tag-box{
 	position: relative;
-	top: -14px;
+	top: -25px;
 	left:7px;
 	width: 300px;
 	height:50px;
