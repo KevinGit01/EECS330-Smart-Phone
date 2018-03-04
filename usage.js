@@ -1,5 +1,38 @@
 function graphDaily(day) {
-  console.log(day);
+
+  // parse the date / time
+  var parseTime_2 = d3.timeParse("%u %H");
+
+  // Get the data again
+
+  d3.csv("weekly.csv", function(error, data) {
+    if (error) throw error;
+    //filter the data
+    var filteredData = data.slice(day * 23 , (day + 1) * 23);
+    filteredData.columns = ["date", "close"];
+    console.log(filteredData);
+    filteredData.forEach(function(d) {
+        d.date = parseTime_2(d.date);
+        d.close = +d.close;
+    });
+
+    // Scale the range of the data
+    x.domain(d3.extent(filteredData, function(d) { return d.date; }));
+    y.domain([0, d3.max(filteredData, function(d) { return d.close; })]);
+
+    // Add the valueline path.
+    svg_2.select("path")
+        .data([filteredData])
+        .attr("class", "line")
+        .attr("d", valueline);
+
+    // Add the X Axis
+    svg_2.select("g")
+        .attr("transform", "translate(0," + height + ")")
+        .call(d3.axisBottom(x)
+            .ticks(4), d3.axisLeft(y));
+  });
+
 }
 
 // ** Update data section (Called from the onclick)
@@ -117,7 +150,7 @@ d3.csv("monthlyUsage.csv", function(error, data) {
 /* Daily Graph data */
 
 // parse the date / time
-var parseTime_2 = d3.timeParse("%X");
+var parseTime_2 = d3.timeParse("%u %H");
 
 // append the svg obgect to the body of the page
 // appends a 'group' element to 'svg'
@@ -130,11 +163,14 @@ var svg_2 = d3.select("#daily").append("svg")
           "translate(" + margin.left + "," + margin.top + ")");
 
 // Get the data
-d3.csv("daily.csv", function(error, data) {
+d3.csv("weekly.csv", function(error, data) {
   if (error) throw error;
   console.log(data);
   //filter the data
-  data.forEach(function(d) {
+  var filteredData = data.slice(0,23);
+  filteredData.columns = ["date", "close"];
+  console.log(filteredData);
+  filteredData.forEach(function(d) {
       d.date = parseTime_2(d.date);
       d.close = +d.close;
   });
