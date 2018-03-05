@@ -60,3 +60,17 @@ function create_post() {
 		click_post = !click_post;
 	}
 }
+
+function expandThread(id) {
+	console.log(id);
+	let dst = document.getElementById(id);
+	let currHeight = dst.clientHeight;
+	if (currHeight < 100) {
+		dst.getElementsByTagName("ol")[0].style.display = "block";
+		dst.getElementsByTagName("ol")[0].style.height = "100%";
+	}
+	else {
+		dst.getElementsByTagName("ol")[0].style.display = "none";
+		dst.getElementsByTagName("ol")[0].style.height = 0;
+	}
+}

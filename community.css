@@ -225,162 +225,6 @@ height:3%;
 	height:20px;
 }
 
-.community-list {
-	height: 100px;
-	margin: 5px;
-	margin-left: 15px;
-	border: 1px solid #C0C0C0;
-}
-
-.community-list img{
-	display: inline-block;
-	height: 20px;
-}
-
-.community-list p{
-	margin-left: 5px;
-	margin-top: 15px;
-	font-size: 20px;
-}
-
-.community-name{
-	margin: 5px;
-	margin-top: 2px;
-}
-
-.community-list h2{
-	display: inline-block;
-}
-
-
-.comment-list {
-	margin: 5px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	height: 80px;
-	margin-left: 15px;
-	border: 1px solid #C0C0C0;
-}
-
-.community-list1{
-	margin: 5px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	height: 200px;
-	margin-left: 15px;
-	border: 1px solid #C0C0C0;
-}
-
-.community-list1 p{
-	font-size: 15px;
-	margin: 10px;
-}
-
-.community-list1 img{
-	display: inline-block;
-	height: 20px;
-}
-
-.community-list1 h2{
-	display: inline-block;
-}
-
-.community-list1 h1{
-	margin: 5px;
-	font-size: 18px;
-}
-
-
-.comment-list img{
-	display: inline-block;
-	height: 20px;
-}
-
-.comment-list p{
-	margin-left: 10px;
-	margin-top: 10px;
-	font-size: 14px;
-}
-
-.comment-name{
-	margin: 5px;
-	margin-top: 2px;
-}
-
-.comment-list h2{
-	display: inline-block;
-}
-
-
-.community-postcomment{
-	margin: 5px;
-	margin-top:0px;
-	height: 150px;
- 	margin-left: 15px;
- 	border: 1px solid #C0C0C0;
-}
-
-.community-postcomment h2{
-	margin-top: 5px;
-	margin-left: 5px;
-}
-
-.your-comment{
-	height: 80px;
-	width: 90%;
-	margin-left: 15px;
-	margin-top: -5px;
-	border: 1px solid #C0C0C0;
-}
-
-.submit_button{
-	margin:10px;
-	float: right;
-}
-
-.good{
-	float:left;
-	background-color:white;
-	position:relative;
-	left:100px;
-	top:100px;
-	border-style:none;
-	outline:none;
-	border-radius:10px;
-}
-
-.good:hover{
-	background-color:66CCFF;
-}
-
-.good:active{
-	background-color:009933;
-}
-
-.bad{
-	float:left;
-	background-color:white;
-	position:relative;
-	left:100px;
-	top:100px;
-	border-style:none;
-	outline:none;
-	border-radius:10px;
-}
-
-.bad:hover{
-	background-color:66CCFF;
-}
-
-.bad:active{
-	background-color:009933;
-}
-
-
-/*
-	hang
-					*/
-
 
 /*
 	huai
@@ -429,7 +273,6 @@ height:3%;
 	margin: 5px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	height: 200px;
 	margin-left: 15px;
 	border: 1px solid #C0C0C0;
 }
@@ -437,6 +280,7 @@ height:3%;
 .community-list1 p{
 	font-size: 15px;
 	margin: 10px;
+	padding-bottom: 28px;
 }
 
 .community-list1 img{
@@ -451,6 +295,7 @@ height:3%;
 .community-list1 h1{
 	margin: 5px;
 	font-size: 18px;
+	cursor: pointer;
 }
 
 
@@ -484,8 +329,7 @@ height:3%;
 }
 
 .community-postcomment h2{
-	margin-top: 5px;
-	margin-left: 5px;
+	margin: 5px;
 }
 
 .your-comment{
