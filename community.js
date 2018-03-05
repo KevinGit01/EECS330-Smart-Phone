@@ -44,3 +44,19 @@ if(ttt2==0){
 	ttt2=1;
 }
 }
+
+let click_post = false;
+
+function create_post() {
+	let dst = document.getElementById('newPost');
+	if (click_post) {
+		dst.style.height = 0;
+		dst.style.display = "none";
+		click_post = !click_post;
+	}
+	else {
+		dst.style.height = "200px";
+		dst.style.display = "block";
+		click_post = !click_post;
+	}
+}

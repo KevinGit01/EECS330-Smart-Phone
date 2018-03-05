@@ -203,16 +203,18 @@ height:3%;
 					*/
 
 
-.newPost{
+#newPost{
 	/* position: relative;
 	left:10px;
 	top:3px;
 	border:1px solid purple;
 	margin-bottom: 20px; */
-	height: 200px;
+	height: 0;
+	display: none;
 	margin: 5px;
 	margin-left: 15px;
 	border: 1px solid #C0C0C0;
+	transition: 0.2s;
 }
 
 .newsubmit_button{
