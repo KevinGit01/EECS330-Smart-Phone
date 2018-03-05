@@ -84,5 +84,15 @@ function addComment(id) {
 		window.alert("Please write a comment before submitting.")
 		return;
 	}
-
+	let html =
+	`<li class="comment-list">
+		<div class="comment-name">
+			<img src="images/touxiang6.jpg">
+			<h2>Hang Wu</h2>
+		</div>
+		<p>${src}</p>
+	</li>`
+	console.log(html);
+	let target = document.getElementById("thread_2_comment");
+	target.insertAdjacentHTML('beforebegin', html);
 }
