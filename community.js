@@ -2,6 +2,7 @@ var tup = 0;
 var tdown = 0;
 var ttt1=0;
 var ttt2=0;
+let threadCounter = 3;
 
 function up() {
 if(tup==0){
@@ -78,21 +79,64 @@ function expandThread(id) {
 function addComment(id) {
 	let dst = document.getElementById(id);
 	let src = dst.getElementsByTagName("ol")[0];
-	src = src.getElementsByTagName("textarea")[0].value;
-	if (src == "") {
+	src = src.getElementsByTagName("textarea")[0];
+	if (src.value == "") {
 		console.log("empty comment");
 		window.alert("Please write a comment before submitting.")
 		return;
 	}
 	let html =
-	`<li class="comment-list">
+	`
+	<li class="comment-list">
 		<div class="comment-name">
 			<img src="images/touxiang6.jpg">
 			<h2>Hang Wu</h2>
 		</div>
-		<p>${src}</p>
-	</li>`
+		<p>${src.value}</p>
+	</li>
+	`;
 	console.log(html);
-	let target = document.getElementById("thread_2_comment");
+	let target = document.getElementById(`${id}_comment`);
 	target.insertAdjacentHTML('beforebegin', html);
+	src.value = "";
+}
+
+function addThread() {
+	let dst = document.getElementById("newPost");
+	let title = dst.getElementsByTagName("textarea")[0];
+	let body = dst.getElementsByTagName("textarea")[1];
+	if (title.value == "" || body.value == "") {
+		console.log("not enough content!");
+		window.alert("Insufficient information to create thread. Please complete all fields.");
+		return;
+	}
+	let id = threadCounter;
+	threadCounter++;
+	let html =
+	`
+	<li id="thread_${id}" class="community-list1">
+    <div class="community-name">
+      <img src="images/touxiang6.jpg">
+      <h2>Hang Wu</h2>
+    </div>
+    <h1 onclick="expandThread('thread_${id}')">${title.value}</h1>
+		<ol>
+			<hr>
+			<p>${body.value}</p>
+			<div id="thread_${id}_comment" class="community-postcomment">
+				<h2>Comment:</h2><br>
+				<textarea class="your-comment" id="text-comment"></textarea>
+				<br>
+				<input class="submit_button" type="button" value="Submit" id="comment_submit" onclick="addComment('thread_${id}')">
+			</div>
+		</ol>
+  </li>
+	`;
+	console.log(id);
+	console.log(html);
+	let currThread = id - 1;
+	let target = document.getElementById(`thread_${currThread}`);
+	target.insertAdjacentHTML('afterend', html);
+	title.value = "";
+	body.value = "";
 }
