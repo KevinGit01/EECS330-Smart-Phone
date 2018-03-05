@@ -1,0 +1,560 @@
+/*
+	Global classes
+					*/
+body {
+	background-image: url("images/iphoneOL.jpg");
+	background-repeat: no-repeat;
+	font-family: Avenir, sans-serif;
+}
+
+
+#screen {
+	height: 530px;
+	width: 300px;
+	margin: 105px 30px;
+}
+
+
+#topBar{
+	position: relative;
+	top: 0px;
+	left:2px;
+  background-color: #b146c3;
+
+}
+
+.material-icons.setting{
+	font-size: 30px;
+	color:white;
+	text-align: center;
+	float:left;
+	position:relative;
+	top:-3px;
+
+}
+
+
+.material-icons.create{
+	font-size: 30px;
+	color:white;
+	text-align: center;
+	float: right;
+	position:relative;
+	left:0px;
+	top: -3px;
+}
+
+
+
+.material-icons.trendingUp{
+	font-size: 30px;
+	color:white;
+	text-align: center;
+	float: left;
+	position:relative;
+	left:0px;
+	top: -3px;
+}
+
+.material-icons.community{
+	font-size: 30px;
+	color:white;
+	text-align: center;
+	float: left;
+	position:relative;
+	left:0px;
+	top: -3px;
+}
+
+.material-icons.profile{
+	font-size: 30px;
+	padding: -3px	;
+
+}
+
+
+.navbar{
+	position: relative;
+	left:-10px;
+  overflow: hidden;
+  width: 300px;
+	height:50px;
+}
+
+#bottomBar{
+	height:60px;
+	width:300px;
+	position:relative;
+	bottom: 5px;
+	left:0px;
+	background-color:#b146c3;
+
+}
+
+#topBar_setting {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+#topBar h1{
+	font-size: 20px;
+	color: white;
+	float:left;
+	position:relative;
+	left:25px;
+	top:0px;
+
+}
+
+
+
+#topBar_share {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+#bottomBar a {
+  float: left;
+	left: 0px;
+	height:60px;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 23.1px;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+.navbar a:hover {
+	/*background: #f1f1f1;*/
+	background: purple;
+  color: #b146c3;
+	height:60px;
+	weight:70px;
+
+
+}
+
+.navbar a:active {
+  background-color: #4CAF50;
+	color:white;
+	height:60px;
+	weight:70px;
+	transform: translateY(5px);
+}
+
+.tag-box{
+	position: relative;
+	top: 8px;
+	left:7.5px;
+	width: 300px;
+	height:50px;
+	color:white;
+	font-weight: bold;
+	font-family:cursive;
+
+}
+
+.tag-home{
+position:relative;
+float:left;
+left:10px;
+top:-30px;
+width:27%;
+height:3%;
+}
+
+.tag-usage{
+	position:relative;
+	float:left;
+	top:-30px;
+	width:27%;
+	height:3%;
+}
+.tag-community{
+	position:relative;
+	top: -30px;
+	left:143px;
+	width:25%;
+	height:3%;
+	display:block;
+}
+.tag-profile{
+	position:relative;
+	left:240px;
+	top:-30px;
+	width:25%;
+	height:3%;
+	display:block;
+}
+
+/*
+	3.4
+					*/
+
+
+.newPost{
+	/* position: relative;
+	left:10px;
+	top:3px;
+	border:1px solid purple;
+	margin-bottom: 20px; */
+	height: 200px;
+	margin: 5px;
+	margin-left: 15px;
+	border: 1px solid #C0C0C0;
+}
+
+.newsubmit_button{
+
+}
+
+#newtitle{
+	height:20px;
+}
+
+.community-list {
+	height: 100px;
+	margin: 5px;
+	margin-left: 15px;
+	border: 1px solid #C0C0C0;
+}
+
+.community-list img{
+	display: inline-block;
+	height: 20px;
+}
+
+.community-list p{
+	margin-left: 5px;
+	margin-top: 15px;
+	font-size: 20px;
+}
+
+.community-name{
+	margin: 5px;
+	margin-top: 2px;
+}
+
+.community-list h2{
+	display: inline-block;
+}
+
+
+.comment-list {
+	margin: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	height: 80px;
+	margin-left: 15px;
+	border: 1px solid #C0C0C0;
+}
+
+.community-list1{
+	margin: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	height: 200px;
+	margin-left: 15px;
+	border: 1px solid #C0C0C0;
+}
+
+.community-list1 p{
+	font-size: 15px;
+	margin: 10px;
+}
+
+.community-list1 img{
+	display: inline-block;
+	height: 20px;
+}
+
+.community-list1 h2{
+	display: inline-block;
+}
+
+.community-list1 h1{
+	margin: 5px;
+	font-size: 18px;
+}
+
+
+.comment-list img{
+	display: inline-block;
+	height: 20px;
+}
+
+.comment-list p{
+	margin-left: 10px;
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+.comment-name{
+	margin: 5px;
+	margin-top: 2px;
+}
+
+.comment-list h2{
+	display: inline-block;
+}
+
+
+.community-postcomment{
+	margin: 5px;
+	margin-top:0px;
+	height: 150px;
+ 	margin-left: 15px;
+ 	border: 1px solid #C0C0C0;
+}
+
+.community-postcomment h2{
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.your-comment{
+	height: 80px;
+	width: 90%;
+	margin-left: 15px;
+	margin-top: -5px;
+	border: 1px solid #C0C0C0;
+}
+
+.submit_button{
+	margin:10px;
+	float: right;
+}
+
+.good{
+	float:left;
+	background-color:white;
+	position:relative;
+	left:100px;
+	top:100px;
+	border-style:none;
+	outline:none;
+	border-radius:10px;
+}
+
+.good:hover{
+	background-color:66CCFF;
+}
+
+.good:active{
+	background-color:009933;
+}
+
+.bad{
+	float:left;
+	background-color:white;
+	position:relative;
+	left:100px;
+	top:100px;
+	border-style:none;
+	outline:none;
+	border-radius:10px;
+}
+
+.bad:hover{
+	background-color:66CCFF;
+}
+
+.bad:active{
+	background-color:009933;
+}
+
+
+/*
+	hang
+					*/
+
+
+/*
+	huai
+					*/
+
+
+
+.community-list {
+	height: 100px;
+	margin: 5px;
+	margin-left: 15px;
+	border: 1px solid #C0C0C0;
+}
+
+.community-list img{
+	display: inline-block;
+	height: 20px;
+}
+
+.community-list p{
+	margin-left: 5px;
+	margin-top: 15px;
+	font-size: 20px;
+}
+
+.community-name{
+	margin: 5px;
+	margin-top: 2px;
+}
+
+.community-list h2{
+	display: inline-block;
+}
+
+
+.comment-list {
+	margin: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	height: 80px;
+	margin-left: 15px;
+	border: 1px solid #C0C0C0;
+}
+
+.community-list1{
+	margin: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	height: 200px;
+	margin-left: 15px;
+	border: 1px solid #C0C0C0;
+}
+
+.community-list1 p{
+	font-size: 15px;
+	margin: 10px;
+}
+
+.community-list1 img{
+	display: inline-block;
+	height: 20px;
+}
+
+.community-list1 h2{
+	display: inline-block;
+}
+
+.community-list1 h1{
+	margin: 5px;
+	font-size: 18px;
+}
+
+
+.comment-list img{
+	display: inline-block;
+	height: 20px;
+}
+
+.comment-list p{
+	margin-left: 10px;
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+.comment-name{
+	margin: 5px;
+	margin-top: 2px;
+}
+
+.comment-list h2{
+	display: inline-block;
+}
+
+
+.community-postcomment{
+	margin: 5px;
+	margin-top:0px;
+	height: 150px;
+ 	margin-left: 15px;
+ 	border: 1px solid #C0C0C0;
+}
+
+.community-postcomment h2{
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.your-comment{
+	height: 80px;
+	width: 90%;
+	margin-left: 15px;
+	margin-top: -5px;
+	border: 1px solid #C0C0C0;
+}
+
+.submit_button{
+	margin:10px;
+	float: right;
+}
+
+/* .good{
+	float:left;
+	background-color:white;
+	position:relative;
+	left:100px;
+	top:100px;
+	border-style:none;
+	outline:none;
+	border-radius:10px;
+} */
+
+.good:hover{
+	background-color:66CCFF;
+}
+
+.good:active{
+	background-color:009933;
+}
+
+/* .bad{
+	float:left;
+	background-color:white;
+	position:relative;
+	left:100px;
+	top:100px;
+	border-style:none;
+	outline:none;
+	border-radius:10px;
+} */
+
+.bad:hover{
+	background-color:66CCFF;
+}
+
+.bad:active{
+	background-color:009933;
+}
+
+
+.community-container {
+  width: 100%;
+  height: 425px;
+  overflow-y: auto;
+}
+
+
+/*
+	huai
+					*/
+
+::-webkit-scrollbar {
+	width: 0px;  /* remove scrollbar space */
+	background: transparent;
+	/* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+	background: #FF0000;
+}

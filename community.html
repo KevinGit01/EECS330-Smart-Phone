@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<header>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Usage</title>
+<link rel="stylesheet" type="text/css" href="community.css"/>
+		<link rel="stylesheet" href="global.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+   rel="stylesheet">
+</header>
+<body>
+  <!-- load the d3.js library -->
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+<div id="screen">
+
+
+  <div class="navbar" ID = "topBar">
+    <a href="#MyTime" ID = "topBar_setting"><i class="material-icons setting">settings</i></a>
+    <h1 style="position:relative;top:15px;font-weight:bold;">MyTime</h1>
+    <a href="#Usage" ID = "topBar_share"><i class="material-icons create">create</i></a>
+  </div>
+
+<div class="community-container">
+	<div class="newPost">
+		<h2>Title:</h2><br>
+		<textarea class="your-comment" id="newtitle"></textarea>
+		<br>
+		<h2>Content:</h2><br>
+		<textarea class="your-comment" id="newBode"></textarea>
+		<input class="newsubmit_button" type="button" value="Submit" id="new_submit">
+	</div>
+
+  <ol type="1">
+  <li class="community-list">
+    <div class="community-name">
+      <img src="images/touxiang1.jpg">
+      <h2>Kevin Zheng</h2>
+    </div>
+    <p>TITLE TITLE TITLE TITLE TITLE</p>
+  </li>
+  <li class="community-list">
+    <div class="community-name">
+      <img src="images/touxiang2.jpg">
+      <h2>Ka Wong</h2>
+    </div>
+    <p>TITLE TITLE TITLE TITLE TITLE</p>
+  </li>
+  </ol>
+
+  <div class="commentdiv">
+
+    <ol type="1">
+    <li class="community-list1">
+        <div class="community-name">
+          <img src="images/touxiang2.jpg">
+          <h2>Ka Wong</h2>
+        </div>
+        <h1>Do not use your cell phones as an alarm clock.</h1>
+        <hr>
+        <p> Use a traditional alarm clock instead of your cell phones. The function of the traditional alarm clock is simple, and they don’t have the ability to distract users. Who uses who knows!</p>
+
+
+
+    </li>
+    <li class="comment-list">
+      <div class="comment-name">
+        <img src="images/touxiang3.jpg">
+        <h2>Kevin Zheng</h2>
+      </div>
+      <p>It doesn’t work for me!</p>
+    </li>
+    <li class="comment-list">
+      <div class="comment-name">
+        <img src="images/touxiang4.jpg">
+        <h2>Ka Wong</h2>
+      </div>
+      <p>I don't have money for a traditional alarm clock!</p>
+    </li>
+    <li class="comment-list">
+      <div class="comment-name">
+        <img src="images/touxiang6.jpg">
+        <h2>Hang Wu</h2>
+      </div>
+      <p>It really works, thank you!</p>
+    </li>
+    </ol>
+
+
+    <div class="community-postcomment">
+      <h2>Comment:</h2><br>
+      <textarea class="your-comment" id="text-comment"></textarea>
+      <br>
+      <input class="submit_button" type="button" value="Submit" id="comment_submit">
+    </div>
+  </div>
+</div>
+
+
+	 <div class="navbar" ID = "bottomBar">
+    <a href="home.html"><i class="material-icons home">home</i></a>
+    <a href="usage.html"><i class="material-icons trendingUp">trending_up</i></a>
+    <a href="#community"><i class="material-icons community">group</i></a>
+    <a href="Profile.html"><i class="material-icons profile">person_pin</i></a>
+  </div>
+
+  <div class = "tag-box">
+    <div class = "tag-home"><p>Home</p></div>
+    <div class = "tag-usage"><p>Usage</p></div>
+    <div class = "tag-community"><p>Community</p></div>
+    <div class = "tag-profile"><p>Profile</p></div>
+  </div>
+
+  </div>
+</body>
+		<script src="community.js"></script>
+</html>
