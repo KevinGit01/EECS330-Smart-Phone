@@ -74,3 +74,15 @@ function expandThread(id) {
 		dst.getElementsByTagName("ol")[0].style.height = 0;
 	}
 }
+
+function addComment(id) {
+	let dst = document.getElementById(id);
+	let src = dst.getElementsByTagName("ol")[0];
+	src = src.getElementsByTagName("textarea")[0].value;
+	if (src == "") {
+		console.log("empty comment");
+		window.alert("Please write a comment before submitting.")
+		return;
+	}
+
+}

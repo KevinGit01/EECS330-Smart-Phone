@@ -292,6 +292,11 @@ height:3%;
 	display: inline-block;
 }
 
+.community-list1 ol{
+	display: none;
+	height: 0;
+}
+
 .community-list1 h1{
 	margin: 5px;
 	font-size: 18px;
@@ -343,6 +348,7 @@ height:3%;
 .submit_button{
 	margin:10px;
 	float: right;
+	cursor: pointer;
 }
 
 /* .good{
